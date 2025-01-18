@@ -1,0 +1,156 @@
+@import "variables";
+
+.auth {
+  padding-top: 20px;
+
+  .container {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid #c3c3c3;
+    display: grid;
+    grid-template-columns: minmax(300px, 600px) 1fr;
+
+    .auth-image {
+      background-color: $light-color;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .auth-form {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .auth-title {
+        font-family: RobotoRegular, sans-serif;
+        font-size: 45px;
+        color: $dark-color;
+        margin-bottom: 20px;
+      }
+
+      .auth-subtitle {
+        font-family: RobotoRegular, sans-serif;
+        font-size: 20px;
+        color: $dark-color;
+        margin-bottom: 35px;
+      }
+
+      .auth-inputs {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 455px;
+
+        #google-btn {
+          width: 100%;
+        }
+
+        p {
+          font-family: RobotoRegular, sans-serif;
+          font-size: 16px;
+          margin-top: 16px;
+          text-align: center;
+        }
+
+        .auth-input-box {
+          margin-bottom: 10px;
+          width: 455px;
+
+          .auth-input {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 25px;
+            font-family: RobotoRegular, sans-serif;
+            font-size: 16px;
+            color: $dark-color;
+            border-radius: 5px;
+            border: 1px solid #c3c3c3;
+            outline: none;
+            box-sizing: border-box;
+
+            &::placeholder {
+              color: #c3c3c3;
+              font-family: RobotoRegular, sans-serif;
+              font-size: 16px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+
+        .auth-checkbox {
+          max-width: 455px;
+          display: flex;
+          align-items: baseline;
+          margin-bottom: 30px;
+          align-self: flex-start;
+
+          input {
+            margin: 0;
+            cursor: pointer;
+            width: 20px;
+            height: 15px;
+            position: relative;
+            top: 2px;
+          }
+
+          label {
+            font-family: RobotoRegular, sans-serif;
+            font-size: 16px;
+            line-height: 120%;
+            margin-left: 10px;
+            cursor: pointer;
+
+            a {
+              text-decoration: none;
+              color: $light-color;
+              font-family: RobotoSemiBold, sans-serif;
+            }
+          }
+        }
+
+        .auth-button {
+          margin-bottom: 40px;
+
+          .button {
+            width: 455px;
+            padding: 15px;
+            font-family: InterSemiBold, sans-serif;
+            font-size: 16px;
+            background-color: $semi-color;
+            color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid;
+          }
+
+          :hover {
+            background-color: $light-color;
+          }
+        }
+
+        .auth-link {
+          font-family: "InterRegular", sans-serif;
+          font-size: 16px;
+
+          a {
+            font-family: RobotoSemiBold, sans-serif;
+            font-size: 16px;
+            color: $light-color;
+            text-decoration: none;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+

@@ -1,0 +1,50 @@
+<section class="auth signup">
+  <div class="container">
+    <div class="auth-image">
+      <img src="./assets/images/page/signup_.png" alt="SignUp">
+    </div>
+    <div class="auth-form">
+      <div class="auth-title">Welcome to Sell Your Skills</div>
+      <div class="auth-subtitle">Get Started - it’s free. No credit card needed.</div>
+
+      <div class="auth-inputs">
+        <div id="google-btn"></div>
+        <p>or choose for yourself</p>
+        <div class="auth-input-box">
+          <input type="text" class="auth-input" placeholder="Email">
+        </div>
+        <div class="auth-input-box">
+          <input type="password" class="auth-input" placeholder="Password">
+        </div>
+        <div class="auth-input-box">
+          <input type="password" class="auth-input" placeholder="Repeat password">
+        </div>
+        <!--      <div class="auth-input">-->
+        <!--        <input type="text" class="input" placeholder="Электронная почта"-->
+        <!--               [ngStyle]="{'borderColor': loginForm.get('email')?.invalid-->
+        <!--                 && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched) ? 'red': ''}"-->
+        <!--               formControlName="email">-->
+        <!--      </div>-->
+        <!--      <div class="auth-input">-->
+        <!--        <input type="password" class="input" placeholder="Пароль"-->
+        <!--               [ngStyle]="{'borderColor': loginForm.get('password')?.invalid-->
+        <!--                 && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched) ? 'red': ''}"-->
+        <!--               formControlName="password">-->
+        <!--      </div>-->
+        <div class="auth-checkbox">
+          <input type="checkbox" id="agree"
+                 formControlName="agree">
+          <label for="agree">By proceeding you agree to the
+            <a routerLink="/terms">Terms of Use</a> and <a routerLink="/policy">Privacy Policy</a></label>
+        </div>
+        <div class="auth-button">
+          <!--        <button class="button" [disabled]="loginForm.invalid" (click)="login()">Войти</button>-->
+          <button class="button">Signup</button>
+        </div>
+        <div class="auth-link">
+          Already have an account? <a routerLink="/login">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

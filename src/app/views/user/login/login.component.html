@@ -1,0 +1,45 @@
+<section class="auth login">
+  <div class="container">
+    <div class="auth-image">
+      <img src="./assets/images/page/login_.png" alt="LogIn">
+    </div>
+    <div class="auth-form">
+      <div class="auth-title">Welcome back!</div>
+      <div class="auth-subtitle">Login to get closer to your audience</div>
+      <div class="auth-inputs">
+        <div id="google-btn"></div>
+        <p>or enter Your ...</p>
+        <div class="auth-input-box">
+          <input type="text" class="auth-input" placeholder="Email">
+        </div>
+        <div class="auth-input-box">
+          <input type="password" class="auth-input" placeholder="Password">
+        </div>
+        <!--      <div class="auth-input">-->
+        <!--        <input type="text" class="input" placeholder="Электронная почта"-->
+        <!--               [ngStyle]="{'borderColor': loginForm.get('email')?.invalid-->
+        <!--                 && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched) ? 'red': ''}"-->
+        <!--               formControlName="email">-->
+        <!--      </div>-->
+        <!--      <div class="auth-input">-->
+        <!--        <input type="password" class="input" placeholder="Пароль"-->
+        <!--               [ngStyle]="{'borderColor': loginForm.get('password')?.invalid-->
+        <!--                 && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched) ? 'red': ''}"-->
+        <!--               formControlName="password">-->
+        <!--      </div>-->
+        <div class="auth-checkbox">
+          <input type="checkbox" id="remember"
+                 formControlName="remember">
+          <label for="remember">Remember me</label>
+        </div>
+        <div class="auth-button">
+          <!--        <button class="button" [disabled]="loginForm.invalid" (click)="login()">Войти</button>-->
+          <button class="button">Login</button>
+        </div>
+        <div class="auth-link">
+          Don’t have an account? <a routerLink="/signup">Signup</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

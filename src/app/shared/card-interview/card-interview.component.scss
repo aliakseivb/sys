@@ -1,0 +1,78 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/fonts";
+
+.interviews-item {
+  border: 1px solid $gray-dark-color;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+
+  .interviews-item-place {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: $gray-dark-color;
+  }
+
+  .interviews-item-question {
+    font-family: RobotoMedium, sans-serif;
+    margin-bottom: 12px;
+  }
+
+  .vacancies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+
+    .vacancies-name {
+      padding: 8px 9px;
+      color: $dark-color;
+      font-family: RobotoRegular, sans-serif;
+      font-size: 12px;
+      border: 1px solid $gray-light-color;
+      border-radius: 10px;
+      margin-right: 8px;
+    }
+
+  }
+
+  .reactions-box {
+    display: flex;
+    color: $gray-dark-color;
+    margin-bottom: 12px;
+
+    .reactions-item {
+      display: flex;
+      align-items: center;
+      margin-right: 12px;
+
+      svg {
+        margin-right: 7px;
+      }
+
+      .quantity-answers-num {
+        span {
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+
+  .users-image-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    img:not(:first-child) {
+      position: relative;
+      left: -5px;
+    }
+
+    .users-image-box-text {
+      font-family: RobotoItalic, sans-serif;
+      font-size: 16px;
+      margin-left: 8px;
+    }
+  }
+}
