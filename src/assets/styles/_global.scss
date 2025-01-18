@@ -38,3 +38,11 @@ button {
 .mat-progress-spinner circle, .mat-spinner circle {
   stroke: $semi-color;
 }
+
+.auth-prelink {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 20px;
+  font-family: InterSemiBold, sans-serif;
+  font-size: 14px;
+}
